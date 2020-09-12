@@ -26,6 +26,6 @@ int main()
 
 float result(float a, float b)
 {
-	int r = sqrt((a * a) + (b * b));
+	float r = sqrt((static_cast<double>(a) * static_cast<double>(a)) + (static_cast<double>(b) * static_cast<double>(b)));
 	return r;
 }
